@@ -5,50 +5,49 @@ import * as Plugin from "./quartz/plugins"
  * Quartz 4 Configuration
  *
  * See https://quartz.jzhao.xyz/configuration for more information.
+ * Edited for https://bilbois.me
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "bilbo",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
-    locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    analytics: null,
+    locale: "en-GB",
+    baseUrl: "bilbois.me",
+    ignorePatterns: ["**/private", "templates", ".obsidian"],
     defaultDateType: "modified",
-    theme: {
+    theme: { // Theme is (or will be) modified to reflect the theme used during creation witin Obsidian
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Schibsted Grotesk", // Font for headers (subject to change)
+        body: "Source Sans Pro", // Font for body (subject to change)
+        code: "IBM Plex Mono", // Font for code (subject to change)
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#faf8f8", // Page background (subject to change)
+          lightgray: "#e5e5e5", // Borders (subject to change)
+          gray: "#b8b8b8", // Graph links, heavier borders (subject to change)
+          darkgray: "#4e4e4e", // Body text (subject to change)
+          dark: "#2b2b2b", // Header text and icons (subject to change)
+          secondary: "#284b63", // Link colour, current graph nodes (subject to change)
+          tertiary: "#84a59d", // Hover states and visited graph nodes (subject to change)
+          highlight: "rgba(143, 159, 169, 0.15)", // Internal link background, highlighted text, highlighted lines of code (subject to change)
+          textHighlight: "#fff23688", // Markdown highlighted text background (subject to change)
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#161618", // Page background (subject to change)
+          lightgray: "#393639", // Borders (subject to change)
+          gray: "#646464", // Graph links, heavier borders (subject to change)
+          darkgray: "#d4d4d4", // Body text (subject to change)
+          dark: "#ebebec", // Header text and icons (subject to change)
+          secondary: "#7b97aa", // Link colour, current graph nodes (subject to change)
+          tertiary: "#84a59d", // Hover states and visited graph nodes (subject to change)
+          highlight: "rgba(143, 159, 169, 0.15)", // Internal link background, highlighted text, highlighted lines of code (subject to change)
+          textHighlight: "#b3aa0288", // Markdown highlighted text background (subject to change)
         },
       },
     },
